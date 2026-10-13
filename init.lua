@@ -525,7 +525,6 @@ require('lazy').setup({
       ---@type table<string, vim.lsp.Config>
       local servers = {
          clangd = {},
-         gopls = {},
          pyright = {},
          rust_analyzer = {},
         --
@@ -537,6 +536,7 @@ require('lazy').setup({
 
         stylua = {}, -- Used to format Lua code
 
+        --gopls = {}, weird issue with this one, probably never writing go anyways lul
         -- Special Lua Config, as recommended by neovim help docs
         lua_ls = {
           on_init = function(client)
